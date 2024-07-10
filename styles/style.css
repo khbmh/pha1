@@ -175,7 +175,7 @@ header button {
 ------------- inspiration section -----------------------
 */
 .inspiration {
-  margin: 5vh auto;
+  margin: 15vh auto;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -198,7 +198,7 @@ header button {
 /*
 ------------- current target section -----------------------
 */
-.current-target {
+.current-target, .next-target {
   width: 80%;
   margin: 15vh auto;
   display: flex;
@@ -207,8 +207,8 @@ header button {
   justify-content: center;
   gap: 3vh;
 }
-.current-target p{
-  width: 70%;
+.current-target p, .next-target .para{
+  width: 75%;
   text-align: center;
 }
 .current-target .targets {
@@ -227,7 +227,7 @@ header button {
 .current-target .targets .item img {
   width: 15%;
 }
-.current-target .targets .item h5 {
+.current-target .targets .item h5, .next-target .targets .items h5 {
   text-decoration: underline;
 }
 .current-target .targets .html{
@@ -246,7 +246,41 @@ header button {
 /*
 ------------- next target section -----------------------
 */
+.next-target .targets{
+  width: 100%;
+  margin: 5vh auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+}
 
+.next-target .targets .items{
+  display: flex;
+  align-items: space-between;
+  width: 100%;
+  height: 20vh;
+  gap: 3vmin;
+  border: 1px solid #47494d;
+  border-radius: 5px;
+  padding: 4vmin;
+}
+.next-target .targets .items img{
+  width: 10%;
+  height: fit-content;
+}
+
+.next-target .targets .items .text{
+  align-items: start;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vmin;
+}
+.next-target .targets .items .text p{
+  margin-bottom: 1.5vmin;
+}
 /*
 ------------- support section -----------------------
 */
@@ -275,7 +309,7 @@ header button {
   background-repeat: no-repeat;
 }
 .support p {
-  width: 70%;
+  width: 46%;
   text-align: center;
 }
 .support .feedback {
@@ -285,7 +319,7 @@ header button {
   gap: 0.5vw;
 }
 .support .feedback input {
-  width: 30vmax;
+  width: 35vmax;
   font-size: 0.7vmax;
   border: 0.1vmax solid #0d1321;
   background: #fff;
@@ -318,4 +352,8 @@ footer {
 footer a {
   color: black;
   text-decoration: none;
+}
+footer .social{
+  display: flex;
+  gap: 3vmin;
 }
