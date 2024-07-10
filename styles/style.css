@@ -17,12 +17,305 @@ body {
 ------------- common styles -----------------------
 */
 p {
-  opacity: 0.8;
+  opacity: 0.7;
+  font-size: 0.9vmax;
 }
 
 button {
   cursor: pointer;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 a:hover {
   opacity: 0.7;
+}
+/*
+------------- header section -----------------------
+*/
+header {
+  width: 80%;
+  height: 10vh;
+  margin: 2vh auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header button {
+  color: #0d1321;
+  background: #fff;
+  font-size: 1.1vmax;
+  font-weight: bold;
+  border: 0.1vmax solid #0d1321;
+  border-radius: 5px;
+  padding: 1vmax 1.5vmax;
+}
+
+/*
+------------- hero section -----------------------
+*/
+
+.hero {
+  background-image: url(../assets/Hero-bg.png);
+  width: 100%;
+  height: 86vh;
+  padding: 5vh 20%;
+}
+
+.hero .content {
+  width: 80%;
+  margin: 2vh auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5vh;
+}
+.hero .content img {
+  width: 30%;
+}
+.hero .content h1 {
+  font-size: 2.3vmax;
+  font-weight: 900;
+}
+.hero .content p {
+  width: 90%;
+}
+.hero .content button {
+  color: #fff;
+  background: #0d1321;
+  font-size: 1.1vmax;
+  font-weight: bold;
+  border: 0.1vmax solid #0d1321;
+  border-radius: 5px;
+  padding: 1vmax 1.5vmax;
+}
+
+/*
+------------- why web dev section -----------------------
+*/
+.web-dev {
+  width: 80%;
+  margin: 10vh auto;
+  padding: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #0d132105;
+  border-radius: 2vmin;
+  gap: 2vh;
+}
+.web-dev .head {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  margin: 5vh auto;
+  margin-top: 2vh;
+  padding: 0 15vmin;
+}
+.web-dev .products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+}
+.web-dev .products .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: start;
+  width: 100%;
+  gap: 30%;
+  border: none;
+  height: 40vh;
+  background: linear-gradient(
+    90deg,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 15px;
+  padding: 5vmin;
+}
+.web-dev .products h2 {
+  color: #4c4d50;
+}
+.web-dev .products .item img {
+  width: 30%;
+}
+.web-dev .products .item .text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  gap: 5vh;
+}
+.web-dev .products .item button {
+  background-color: #fff;
+  color: #4c4d50;
+  border: 1px solid #47494d;
+  padding: 0.7vmax 1vmax;
+}
+.web-dev .products #item2 {
+  background: linear-gradient(
+    270deg,
+    rgb(255, 255, 255),
+    rgba(255, 255, 255, 0) 100%
+  );
+  gap: 10%;
+}
+/*
+------------- inspiration section -----------------------
+*/
+.inspiration {
+  margin: 5vh auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+}
+.inspiration p {
+  width: 70%;
+  text-align: center;
+}
+.inspiration iframe {
+  width: 100%;
+  height: 70vmin;
+  border: 1px solid #47494d;
+  padding: 2vmin;
+  border-radius: 10px;
+}
+
+/*
+------------- current target section -----------------------
+*/
+.current-target {
+  width: 80%;
+  margin: 15vh auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3vh;
+}
+.current-target p{
+  width: 70%;
+  text-align: center;
+}
+.current-target .targets {
+  display: flex;
+  gap: 2%;
+}
+.current-target .targets .item {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  background: beige;
+  padding: 5vmin;
+  border-radius: 10px;
+
+}
+.current-target .targets .item img {
+  width: 15%;
+}
+.current-target .targets .item h5 {
+  text-decoration: underline;
+}
+.current-target .targets .html{
+  background: rgba(255, 76, 30, 0.05);
+}
+.current-target .targets .css{
+  background: rgba(0, 76, 232, 0.05);
+}
+.current-target .targets .js{
+  background: rgba(255, 223, 0, 0.05);
+}
+.current-target .targets .item p{
+  text-align: left;
+  width: 100%;
+}
+/*
+------------- next target section -----------------------
+*/
+
+/*
+------------- support section -----------------------
+*/
+
+.support {
+  width: 80%;
+  margin: 10vh auto;
+  border: none;
+  height: 50vh;
+  border-radius: 10px;
+  padding: 10min 10vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5vh;
+  color: #fff;
+  background-image: radial-gradient(
+      rgba(11, 11, 11, 0.697),
+      rgba(0, 0, 0, 0.851),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("../assets/handshake.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.support p {
+  width: 70%;
+  text-align: center;
+}
+.support .feedback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+}
+.support .feedback input {
+  width: 30vmax;
+  font-size: 0.7vmax;
+  border: 0.1vmax solid #0d1321;
+  background: #fff;
+  color: #0d1321;
+  border-radius: 5px;
+  padding: 1vmax 1.5vmax;
+}
+.support .feedback button {
+  width: 8vmax;
+  font-size: 1vmax;
+  border: 0.1vmax solid #0d1321;
+  background: #fff;
+  color: #0d1321;
+  font-weight: 800;
+  border-radius: 5px;
+  padding: 1vmax 1.5vmax;
+}
+
+/*
+------------- footer section -----------------------
+*/
+footer {
+  width: 80%;
+  margin: 5vh auto;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer a {
+  color: black;
+  text-decoration: none;
 }
